@@ -1,0 +1,9 @@
+Defining the problem statement:
+
+Create a Predictive model that can tell if a person will survive the titanic crash or not?
+
+    - Target Variable: Survived
+    - Predictors: age, sex, passenger class, etc.
+
+    - Survived=0 The passenger died
+    - Survived=1 The passenger survived
