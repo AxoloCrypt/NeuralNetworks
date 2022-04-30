@@ -30,3 +30,4 @@ test_x = np.column_stack = np.column_stack((test_df.x.values, test_df.y.values))
 print("EVALUATION")
 model.evaluate(test_x, test_df.color.values)
 
+print("Prediction: ", model.predict(np.array([[0, 1]])).shape)

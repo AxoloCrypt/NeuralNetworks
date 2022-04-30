@@ -7,7 +7,6 @@ train_df = pd.read_csv('train(2).csv')
 
 np.random.shuffle(train_df.values)
 
-
 print(train_df.head())
 
 model = keras.Sequential([
@@ -31,3 +30,5 @@ test_x = np.column_stack = np.column_stack((test_df.x.values, test_df.y.values))
 
 print("EVALUATION")
 model.evaluate(test_x, test_df.color.values)
+
+print("Prediction: ", model.predict(np.array([[0, 3]])))

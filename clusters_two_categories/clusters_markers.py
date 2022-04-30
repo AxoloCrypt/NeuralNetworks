@@ -36,5 +36,8 @@ test_one_hot_marker = pd.get_dummies(test_df.marker).values
 
 test_labels = np.concatenate((test_one_hot_color, test_one_hot_marker), axis=1)
 
+print("Prediction: ", model.predict(np.array([[0, 3]])).shape)
+
 print("EVALUATION")
 model.evaluate(test_x, test_labels)
+
